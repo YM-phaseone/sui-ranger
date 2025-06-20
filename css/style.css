@@ -242,7 +242,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header__logo .logo-image {
-    height: 50px; /* PCでの高さ */
+    height: 80px; /* PCでの高さ */
   }
 }
 .header__logo .logo-text {
@@ -445,21 +445,21 @@ body.is-fixed {
 }
 
 main {
-  margin-top: 70px;
+  margin-top: 80px;
 }
 @media screen and (min-width: 768px) {
   main {
-    margin-top: 90px;
+    margin-top: 120px;
   }
 }
 
 .mv {
-  background-image: url("../img/ChatGPT Image 2025年6月18日 15_59_36.png"); /* 海の画像を使用 */
+  background-image: url("../img/mv_bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  height: 500px; /* セクションの高さ */
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -468,17 +468,17 @@ main {
           align-items: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: flex-start; /* コンテンツを左寄せに設定 */
-  color: #fff; /* テキスト色を白に */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* 読みやすくするために影を強める */
-  padding-left: 20px; /* 左側に少しパディング */
-  overflow: hidden; /* ヒーロー画像がはみ出さないように */
+          justify-content: flex-start;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  padding-left: 20px;
+  overflow: hidden;
   /* オーバーレイ */
 }
 @media screen and (min-width: 768px) {
   .mv {
-    height: 850px; /* PCでの高さを調整 */
-    padding-left: 80px; /* PCでの左パディング */
+    height: 850px;
+    padding-left: 80px;
   }
 }
 .mv::before {
@@ -492,56 +492,55 @@ main {
   z-index: 1;
 }
 .mv__inner {
-  z-index: 2; /* コンテンツがオーバーレイの上に表示されるように */
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; /* モバイルでは縦並び */
+          flex-direction: column;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start; /* テキストコンテンツを左寄せ */
-  text-align: left; /* テキストを左寄せ */
-  width: 100%; /* inner の幅をフル活用 */
+          align-items: flex-start;
+  text-align: left;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .mv__inner {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; /* PCでは横並び */
+            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; /* コンテンツとヒーロー画像を左右に配置 */
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; /* 垂直方向中央揃え */
+            align-items: center;
   }
 }
 .mv__content {
   position: relative;
-  z-index: 60; /* ヒーロー画像より手前に表示 */
-  padding-right: 20px; /* ヒーロー画像との間にスペースを確保 */
-  /* テキストコンテンツを上方向にずらす */
+  z-index: 60;
+  padding-right: 20px;
   -webkit-transform: translateY(-30px);
-          transform: translateY(-30px); /* 例: 30px上に移動。値は調整してください */
+          transform: translateY(-30px);
 }
 @media screen and (min-width: 768px) {
   .mv__content {
-    width: 55%; /* PCではコンテンツの幅を半分に */
+    width: 55%;
     padding-right: 0;
     -webkit-transform: translateY(-50px);
-            transform: translateY(-50px); /* PCでの移動量も調整可能 */
+            transform: translateY(-50px);
   }
 }
 .mv__lead1 {
   font-size: 32px;
   font-weight: 700;
   line-height: 1.3;
-  margin-bottom: 15px; /* スペース調整 */
-  color: #fff; /* 白い背景で読みやすく */
+  margin-bottom: 15px;
+  color: #fff;
 }
 @media screen and (min-width: 768px) {
   .mv__lead1 {
@@ -550,8 +549,8 @@ main {
 }
 .mv__description {
   font-size: 16px;
-  margin-bottom: 30px; /* スペース調整 */
-  color: #fff; /* 白い背景で読みやすく */
+  margin-bottom: 30px;
+  color: #fff;
 }
 @media screen and (min-width: 768px) {
   .mv__description {
@@ -567,8 +566,8 @@ main {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 600px; /* ヒーロー画像の表示幅を固定 */
-    height: 600px; /* ヒーロー画像の表示高さを固定 */
+    width: 600px;
+    height: 600px;
     overflow: hidden;
     z-index: 55;
     opacity: 0;
@@ -581,19 +580,18 @@ main {
   }
 }
 .mv .mv__hero-image img {
-  position: absolute; /* 親コンテナ内で絶対配置 */
-  bottom: 0; /* 親コンテナの下端に配置 */
-  right: 0; /* 親コンテナの右端に配置 */
-  max-width: 100%; /* 親コンテナの幅に収まるように */
-  height: 100%; /* 親コンテナの高さに収まるように */
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  height: 100%;
   -o-object-fit: contain;
-     object-fit: contain; /* アスペクト比を維持し、画像全体が表示されるように調整 */
-  display: block; /* 画像がブロック要素として振る舞うように */
+     object-fit: contain;
+  display: block;
 }
 .mv .mv__hero-image.is-visible {
   opacity: 1;
   -webkit-transform: translateY(0);
-          transform: translateY(0); /* 通常の位置に移動 */
+          transform: translateY(0);
   pointer-events: auto;
 }
 
