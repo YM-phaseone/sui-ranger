@@ -188,7 +188,7 @@ body {
       vertical-align: middle; /* 上下中央揃え */
 
       @include mq(pc) {
-        height: 50px; /* PCでの高さ */
+        height: 80px; /* PCでの高さ */
       }
     }
 
@@ -328,7 +328,7 @@ body {
 
   &__link {
     color: $color-white;
-    font-size: 28px; // ドロワーリンクの文字サイズを大きく
+    font-size: 28px; 
     font-weight: 600;
     text-decoration: none;
     opacity: 0;
@@ -341,10 +341,9 @@ body {
     transform: translateY(-60px);
     animation-fill-mode: forwards;
 
-    // お問い合わせボタンの文字サイズを小さくする
     .button {
-      font-size: 18px; // 例: 18pxに設定
-      padding: 10px 30px; // 必要に応じてパディングも調整
+      font-size: 18px;
+      padding: 10px 30px;
     }
   }
 }
@@ -355,32 +354,32 @@ body.is-fixed {
 
 // メインコンテンツの開始位置を調整
 main {
-  margin-top: 70px; // ヘッダーの高さに合わせて調整 (モバイル)
+  margin-top: 80px;
   @include mq(pc) {
-    margin-top: 90px; // ヘッダーの高さに合わせて調整 (PC)
+    margin-top: 120px; 
   }
 }
 
 // メインビジュアル (MV) セクション - シンプルなレイアウト
 .mv {
-  // 背景画像を設定
-  background-image: url('../img/ChatGPT Image 2025年6月18日 15_59_36.png'); /* 海の画像を使用 */
+  
+  background-image: url('../img/mv_bg.png'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  height: 500px; /* セクションの高さ */
+  height: 500px; 
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* コンテンツを左寄せに設定 */
-  color: $color-white; /* テキスト色を白に */
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.4); /* 読みやすくするために影を強める */
-  padding-left: 20px; /* 左側に少しパディング */
-  overflow: hidden; /* ヒーロー画像がはみ出さないように */
+  justify-content: flex-start; 
+  color: $color-white; 
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.4); 
+  padding-left: 20px; 
+  overflow: hidden; 
 
   @include mq(pc) {
-    height: 850px; /* PCでの高さを調整 */
-    padding-left: 80px; /* PCでの左パディング */
+    height: 850px; 
+    padding-left: 80px; 
   }
 
   /* オーバーレイ */
@@ -397,31 +396,30 @@ main {
 
   &__inner {
     @extend .inner;
-    z-index: 2; /* コンテンツがオーバーレイの上に表示されるように */
+    z-index: 2; 
     display: flex;
-    flex-direction: column; /* モバイルでは縦並び */
-    align-items: flex-start; /* テキストコンテンツを左寄せ */
-    text-align: left; /* テキストを左寄せ */
-    width: 100%; /* inner の幅をフル活用 */
+    flex-direction: column; 
+    align-items: flex-start; 
+    text-align: left; 
+    width: 100%;
 
     @include mq(pc) {
-      flex-direction: row; /* PCでは横並び */
-      justify-content: space-between; /* コンテンツとヒーロー画像を左右に配置 */
-      align-items: center; /* 垂直方向中央揃え */
+      flex-direction: row; 
+      justify-content: space-between; 
+      align-items: center; 
     }
   }
 
   &__content {
     position: relative;
-    z-index: 60; /* ヒーロー画像より手前に表示 */
-    padding-right: 20px; /* ヒーロー画像との間にスペースを確保 */
-    /* テキストコンテンツを上方向にずらす */
-    transform: translateY(-30px); /* 例: 30px上に移動。値は調整してください */
-
+    z-index: 60; 
+    padding-right: 20px; 
+    
+    transform: translateY(-30px); 
     @include mq(pc) {
-      width: 55%; /* PCではコンテンツの幅を半分に */
+      width: 55%; 
       padding-right: 0;
-      transform: translateY(-50px); /* PCでの移動量も調整可能 */
+      transform: translateY(-50px); 
     }
   }
 
@@ -429,8 +427,8 @@ main {
     font-size: 32px;
     font-weight: 700;
     line-height: 1.3;
-    margin-bottom: 15px; /* スペース調整 */
-    color: $color-white; /* 白い背景で読みやすく */
+    margin-bottom: 15px; 
+    color: $color-white; 
 
     @include mq(pc) {
       font-size: 48px;
@@ -439,30 +437,27 @@ main {
 
   &__description {
     font-size: 16px;
-    margin-bottom: 30px; /* スペース調整 */
-    color: $color-white; /* 白い背景で読みやすく */
+    margin-bottom: 30px; 
+    color: $color-white; 
 
     @include mq(pc) {
       font-size: 20px;
     }
   }
 
-  &__button {
-    
-    // ボタンは既存のスタイルを継承
-  }
+  
 
  .mv__hero-image {
-  display: none; // モバイルでは非表示
+  display: none; 
 
   @include mq(pc) {
-    display: block; // PCで表示
+    display: block; 
     position: absolute;
     right: 0;
-    bottom: 0; // 親要素の下端に固定
-    width: 600px; /* ヒーロー画像の表示幅を固定 */
-    height: 600px; /* ヒーロー画像の表示高さを固定 */
-    overflow: hidden; // アニメーションで画像がはみ出さないように
+    bottom: 0; 
+    width: 600px; 
+    height: 600px; 
+    overflow: hidden; 
     z-index: 55;
     opacity: 0;
     transform: translateY(100%); /* 自身の高さ分だけ下に移動させ、完全に隠す */
@@ -470,18 +465,17 @@ main {
   }
 
   img {
-    position: absolute; /* 親コンテナ内で絶対配置 */
-    bottom: 0; /* 親コンテナの下端に配置 */
-    right: 0; /* 親コンテナの右端に配置 */
-    max-width: 100%; /* 親コンテナの幅に収まるように */
-    height: 100%; /* 親コンテナの高さに収まるように */
-    object-fit: contain; /* アスペクト比を維持し、画像全体が表示されるように調整 */
-    display: block; /* 画像がブロック要素として振る舞うように */
+    position: absolute; 
+    bottom: 0;  
+    max-width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+    display: block; 
   }
 
   &.is-visible {
     opacity: 1;
-    transform: translateY(0); /* 通常の位置に移動 */
+    transform: translateY(0);
     pointer-events: auto;
   }
 }
