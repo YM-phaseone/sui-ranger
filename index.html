@@ -1,1 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: https://ogp.me/ns#">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>水レンジャー | 沖縄の水のトラブル解決</title>
+    <meta
+      name="description"
+      content="沖縄の水道工事・修理は『水レンジャー』にお任せ！スピーディーかつ誠実に、あらゆる水のトラブルを解決します。プロの技術で安心を提供。"
+    />
+    <link rel="icon" href="./favicon.ico" />
+    <meta property="og:title" content="水レンジャー | 沖縄の水のトラブル解決" />
+    <meta
+      property="og:description"
+      content="沖縄の水道工事・修理は『水レンジャー』にお任せ！スピーディーかつ誠実に、あらゆる水のトラブルを解決します。プロの技術で安心を提供。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:image" content="https://example.com/img/ogp.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDNを再追加 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
+  <body>
+    <!-- ヘッダーセクション -->
+    <header class="header">
+      <div class="header__inner">
+        <!-- ロゴとテキストを並べて表示するように変更 -->
+        <h1 class="header__logo">
+          <a href="#mv" class="logo-link">
+            <img src="./img/face-loogo3.png" alt="水レンジャーロゴ" class="logo-image">
+            <span class="logo-text">水レンジャー</span>
+          </a>
+        </h1>
+        <nav class="header__nav">
+          <a href="#services" class="header__link">サービス</a>
+          <a href="#about" class="header__link">水レンジャーとは</a>
+          <a href="#voice" class="header__link">お客様の声</a>
+          <a href="#recruit" class="header__link">採用情報</a>
+          <a href="#contact" class="header__button">お問い合わせ</a>
+        </nav>
+        <button class="header__open drawer-icon">
+          <span class="drawer-icon__bar"></span>
+          <span class="drawer-icon__bar"></span>
+          <span class="drawer-icon__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ドロワーメニュー (モバイル用) -->
+    <div id="js-drawer-content" class="drawer-content">
+      <nav class="drawer-content__menu">
+        <a href="#services" class="drawer-content__link">サービス</a>
+        <a href="#about" class="drawer-content__link">水レンジャーとは</a>
+        <a href="#voice" class="drawer-content__link">お客様の声</a>
+        <a href="#recruit" class="drawer-content__link">採用情報</a>
+        <div class="drawer-content__button">
+          <a href="#contact" class="button drawer-content__link">お問い合わせ</a>
+        </div>
+      </nav>
+    </div>
+
+    <main>
+      <!-- メインビジュアルセクション (画像のようにシンプルに) -->
+      <section id="mv" class="mv mv--simple">
+        <div class="mv__inner">
+          <div class="mv__content">
+            <p class="mv__lead1">チームの力を強化し<br />未来を共に創る</p>
+            <p class="mv__description">
+               沖縄県内で新築・改築における水道工事全般を中心に、<br />
+                各種配管工事や修理など多岐にわたる業務を請け負っています。<br />
+                一緒に働いてくれる正社員・パートナーを募集中です。
+            </p>
+            <div class="mv__button">
+              <a href="#contact" class="button button--large">お問い合わせ</a>
+            </div>
+          </div>
+          <!-- ヒーロー画像を追加 (onerrorでデバッグ用代替画像を設定) -->
+          <div class="mv__hero-image" id="js-hero-image">
+            <img src="./img/rangers.png" alt="水レンジャーのヒーローたち" onerror="this.onerror=null;this.src='https://placehold.co/600x600/FF0000/FFFFFF?text=Image+Missing';" />
+          </div>
+        </div>
+      </section>
+
+     
+
+      <!-- サービス紹介セクション -->
+      <section id="services" class="services">
+        <div class="services__inner inner">
+          <h2 class="section-title">私たちのサービス</h2>
+          <ul class="services__list">
+            <li class="services__item">
+              <div class="services__icon">
+                <i class="fa-solid fa-shower"></i>
+              </div>
+              <h3>水漏れ修理</h3>
+              <p>蛇口からの水漏れ、パイプの破損など、どんな小さな水漏れも見逃しません。</p>
+            </li>
+            <li class="services__item">
+              <div class="services__icon">
+                <i class="fa-solid fa-toilet"></i>
+              </div>
+              <h3>つまり解消</h3>
+              <p>トイレ、キッチン、お風呂の排水管のつまりをスピーディーに解決します。</p>
+            </li>
+            <li class="services__item">
+              <div class="services__icon">
+                <i class="fa-solid fa-wrench"></i>
+              </div>
+              <h3>給排水設備工事</h3>
+              <p>新しい設備の設置から、老朽化した配管の交換まで、幅広く対応します。</p>
+            </li>
+            <li class="services__item">
+              <div class="services__icon">
+                <i class="fa-solid fa-droplet"></i>
+              </div>
+              <h3>その他水道トラブル</h3>
+              <p>異音、水の濁りなど、原因不明のトラブルも現地調査の上、最適な解決策をご提案します。</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 水レンジャーとは？セクション -->
+      <section id="about" class="about">
+        <div class="about__inner inner">
+          <h2 class="section-title">水レンジャーとは？</h2>
+          <p class="about__text">
+            水のトラブルを即解決！<br />
+            沖縄県内の水道工事・配管・修理を手掛けるプロ集団です。<br />
+            地域に根ざし、お客様一人ひとりに寄り添った誠実なサービスを心がけています。<br />
+            「困った！」を「よかった！」に変えるため、今日も沖縄の水を守っています。
+          </p>
+        </div>
+      </section>
+
+       <!-- パララックスイメージセクション -->
+      <section class="parallax-section" style="background-image: url('./img/mv_1.jpg');">
+        <div class="parallax-content">
+          <h2 class="parallax-title">安心と信頼のサービス</h2>
+          <p class="parallax-text">お客様の「困った」を迅速に解決します。</p>
+        </div>
+      </section>
+
+      <!-- お客様の声セクション -->
+      <section id="voice" class="voice">
+        <div class="voice__inner inner">
+          <h2 class="section-title">お客様の声</h2>
+          <div class="voice__cards">
+            <div class="voice__card">
+              <div class="voice__header">
+                <img src="https://placehold.co/80x80/cccccc/ffffff?text=User1" alt="お客様1" class="voice__avatar" />
+                <p class="voice__name">那覇市 / A様</p>
+              </div>
+              <p class="voice__text">
+                急な水漏れで困っていましたが、電話してすぐに駆けつけてくれました。作業も丁寧で、料金も明確だったので安心できました。本当に助かりました！
+              </p>
+            </div>
+            <div class="voice__card">
+              <div class="voice__header">
+                <img src="https://placehold.co/80x80/cccccc/ffffff?text=User2" alt="お客様2" class="voice__avatar" />
+                <p class="voice__name">宜野湾市 / B様</p>
+              </div>
+              <p class="voice__text">
+                トイレのつまりがひどく、自力ではどうにもなりませんでした。水レンジャーさんに依頼したら、あっという間に解決。プロの技に感動です！
+              </p>
+            </div>
+            <div class="voice__card">
+              <div class="voice__header">
+                <img src="https://placehold.co/80x80/cccccc/ffffff?text=User3" alt="お客様3" class="voice__avatar" />
+                <p class="voice__name">沖縄市 / C様</p>
+              </div>
+              <p class="voice__text">
+                古い給湯器の交換をお願いしました。説明も分かりやすく、作業もスムーズ。新しい給湯器で快適です。ありがとうございました！
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 募集要項セクション (採用情報として配置) -->
+      <section id="recruit" class="recruit">
+        <div class="recruit__inner inner">
+          <h2 class="section-title">水レンジャーで働く仲間を募集！</h2>
+          <p class="recruit__intro">沖縄で水道工事のプロとして活躍しませんか？安定した仕事量と、働きやすい環境がここにあります。</p>
+          <div class="recruit__boxes">
+            <div class="recruit__box">
+              <h3>正社員</h3>
+              <ul>
+                <li>業務内容：水道工事・修理・配管作業</li>
+                <li>勤務地：沖縄本島内</li>
+                <li>給与：月給〇〇万円〜</li>
+                <li>福利厚生：社保・交通費・資格支援制度</li>
+              </ul>
+            </div>
+            <div class="recruit__box">
+              <h3>業務委託パートナー</h3>
+              <ul>
+                <li>対象：水道業務経験者</li>
+                <li>報酬：案件単価制（応相談）</li>
+                <li>働き方：自由なスケジュールOK</li>
+                <li>エリア：沖縄本島中心</li>
+              </ul>
+            </div>
+          </div>
+          <div class="recruit__button-area">
+            <a href="#contact" class="button">採用応募・相談はこちら</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 水レンジャーで働くメリットセクション -->
+      <section id="merit" class="merit">
+        <div class="merit__inner inner">
+          <h2 class="section-title">水レンジャーで働くメリット</h2>
+          <ul class="merit__list">
+            <li>案件多数で仕事に困らない</li>
+            <li>仲間意識が強く、職場の雰囲気◎</li>
+            <li>地元密着だから通いやすい</li>
+            <li>安定＋自由、どちらも選べる働き方</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- お問い合わせセクションの直前に波のSVGを追加 -->
+      <div class="wave-container">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.9)" /> <!-- 透過度を0.85から0.9にアップ -->
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.8)" /> <!-- 透過度を0.7から0.8にアップ -->
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.6)" /> <!-- 透過度を0.5から0.6にアップ -->
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#EAF4F7" /> <!-- 背景色と合わせるため維持 -->
+          </g>
+        </svg>
+      </div>
+
+      <!-- お問い合わせセクション -->
+      <section id="contact" class="contact">
+        <div class="contact__inner inner">
+          <h2 class="section-title">お問い合わせ</h2>
+          <p>水のトラブルに関するご相談、または採用に関するお問い合わせは、お気軽にご連絡ください！</p>
+          <div class="contact__buttons">
+            <a href="tel:0120-000-000" class="button">電話で相談する</a>
+            <a href="https://line.me/" class="button">LINEで相談する</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- フッターセクション -->
+    <footer class="footer">
+      <div class="footer__inner inner">
+        <small>&copy; 2025 水レンジャー All Rights Reserved.</small>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
